@@ -1,0 +1,583 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: NU-Spine
+    Template URI: http://coderitem.com
+    Description: This is Version College web site. 
+    Author: SA Bappy
+    Author URI: http://sabappy.com
+    License: GNU General Public License version 3.0
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    1. Typography
+    2. Header Area 
+    3. Iteam Area
+    4. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+/*****************************************************/
+/**************    1. Typography   *******************/
+/*****************************************************/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 41px;
+}
+h4 {
+    font-size: 18px;
+}
+
+img {
+    border: none;
+    max-width: 100%
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            -ms-grid-row-align: center;
+        align-items: center;
+}
+.our-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1190px;
+}
+
+
+  /*****************************************************/
+ /**************    2. Header Area   ****************/
+/*****************************************************/
+.hero-area {
+    background-image: url(img/herobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 240px;
+    background-position: center center;
+}
+.header-area {
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+.logo a {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+.call-button {
+    text-align: right;
+}
+.call-button a {
+    color: #dfedee;
+    background: #614285;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 17px;
+    font-weight: 300;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.call-button a:hover {
+    background: #382052;
+}
+.call-button a img {
+    width: 22px;
+    margin-right: 10px;
+}
+/* .call-button a i {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 10px;
+    float: left;
+} */
+/* Menu */
+.menu-area ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.menu-area ul li {
+    width: 33.33%;
+    text-align: center;
+}
+.menu-area ul li.active a {
+    border-bottom: 5px solid #613F85;
+}
+.menu-area ul li:hover a {
+    background: #603F84;
+    color: #FFF;
+}
+.menu-area ul li:last-child a {
+    border-right: none;
+}
+.menu-area ul li a {
+    color: #5d6364;
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    padding: 13px 20px;
+    background: #DFEDEE;
+    border-right: 1px solid #C8D4D5;
+    border-bottom: 5px solid transparent;
+    -webkit-transition: .3s;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+/* Menu */
+/* Hero */
+.hero-content {
+    width: 40%;
+    margin: 44px 0 0 102px;
+    border-left: 4px solid #613f85;
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hero-content h1 {
+    color: #5d6364;
+    font-weight: 100;
+    line-height: 42px;
+    margin-bottom: 13px;
+}
+.hero-content h4 {
+    color: #5d6364;
+    font-size: 20px;
+    font-weight: 100;
+}
+/* Hero */
+  /*****************************************************/
+ /**************    3. Banner Bottom Area     ******************/
+/*****************************************************/
+.banner-bottom-area {
+    background: #614285;
+    padding: 55px 0;
+}
+.single-border {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #DDD;
+    margin: 0 auto;
+}
+
+  /*****************************************************/
+ /**************    3. We Treat Area     ******************/
+/*****************************************************/
+.treat-left img {
+    width: 100%;
+    margin: 0 auto;
+}
+.treat-left {
+    text-align: center;
+}
+.treat-left img.mer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 3;
+}
+.hov-meru {
+    position: absolute;
+    min-height: 96%;
+    width: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 4;
+    cursor: pointer;
+}
+.hv1 {
+    width: 66%;
+    height: 151px;
+}
+.hv2 {
+    width: 68%;
+    height: 298px;
+}
+.hv3 {
+    width: 100%;
+    height: 200px;
+}
+.treat-left img.mer.on {
+    display: block;
+}
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+}
+.section-title h1 {
+    color: #5d6364;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+}
+.section-title h1:before {
+    content: "";
+    position: absolute;
+    border-left: 4px solid #614285;
+    height: 70px;
+    top: -10px;
+    left: -19px;
+}
+.menu-tabs ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.menu-tabs ul li {
+    width: 33.33%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #5d6364;
+    font-weight: 300;
+    background: #C8D4D5;
+    display: block;
+    padding: 16px 7px;
+    border-right: 1px solid #FFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+.menu-tabs ul li:last-child {
+    border-right: none;
+}
+.menu-tabs ul li.active {
+    background: #614285;
+    color: #FFF;
+    border-right: 1px solid #614285;
+}
+.menu-tabs ul li:hover {
+    background: #614285;
+    color: #FFF;
+}
+
+
+.single-tab-content {
+    margin-top: 35px;
+    margin-bottom: 58px;
+    display: none;
+}
+.single-tab-content.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.left-content {
+    width: 50%;
+}
+.title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5d6364;
+    margin-bottom: 18px;
+}
+.left-content ul li, .right-content ul li {
+    color: #5d6364;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+  /*****************************************************/
+ /**************    4. Our Locations Area  ****************/
+/*****************************************************/
+.locations {
+    width: 100%;
+    margin-left: auto;
+    max-width: 640px;
+    padding-bottom: 20px;
+}
+.location-bg {
+    background: #DFEDEE;
+}
+.location-title {
+    text-align: left;
+}
+.location-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 26px;
+}
+.common {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.single-content {
+    margin-bottom: 20px;
+}
+.single-content h4 {
+    color: #5d6364;
+    font-weight: 300;
+}
+.single-content p {
+    color: #5d6364;
+    font-weight: 300;
+    line-height: 22px;
+}
+.right-map {
+    height: 100%;
+}
+.right-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+  /*****************************************************/
+ /**************    4. Get In Touch Area  ****************/
+/*****************************************************/
+.contact-title {
+    text-align: left;
+}
+.contact-title h4 {
+    color: #5d6364;
+    font-size: 20px;
+    font-weight: 300;
+}
+.contact-title {
+    text-align: left;
+    margin-bottom: 42px;
+    position: relative;
+    padding-left: 25px;
+}
+.contact-title h1 {
+    color: #5d6364;
+    font-weight: 100;
+}
+.contact-title:before {
+    content: "";
+    position: absolute;
+    height: 105%;
+    width: 4px;
+    background: #614285;
+    top: 0;
+    left: 0;
+}
+
+  /*****************************************************/
+ /**************    4. Footer Area  ****************/
+/*****************************************************/
+.contact-form {
+    margin-bottom: 45px;
+}
+.input-area {
+    padding: 5px 14px;
+    overflow: hidden;
+}
+.input-area input, .input-area textarea {
+    width: 48%;
+    float: left;
+    border: 1px solid #DDD;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    color: #5d6364;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 2%;
+}
+.input-area textarea {
+    width: 80%;
+    max-height: 47px;
+    min-height: 47px;
+}
+.input-area input[type="submit"] {
+    width: 16%;
+    background: #C8D4D5;
+    padding: 13px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.input-area input[type="submit"]:hover {
+    background: #603F84;
+    color: #FFF;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 19px;
+}
+.contact-info h4 {
+    color: #5d6364;
+    font-weight: 300;
+}
+.contact-info p {
+    font-size: 22px;
+    color: #613f85;
+    font-weight: 500;
+    margin-top: 18px;
+}
+
+.copyright-area {
+    background: #2C2B2C;
+    padding: 25px 0;
+    border-top: 5px solid #614285;
+}
+.copyright-text p {
+    color: #5d6364;
+    font-weight: 400;
+}
+.footer-logo {
+    text-align: center;
+}
+.right-text {
+    text-align: right;
+    margin-right: 13px;
+}
+
+/* About Page */
+.menu-section {
+    background: #dfedee;
+}
+.profile-area {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.profile-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 60px;
+}
+.profile-title {
+    margin-left: 38px;
+    border-left: 4px solid #614285;
+    padding-left: 13px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.profile-title h1 {
+    color: #5d6364;
+    font-weight: 300;
+    line-height: 46px;
+    padding-bottom: 5px;
+}
+.profile-title p {
+    color: #5d6364;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.profile-content p {
+    color: #5d6364;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.bg-color {
+    background: #dfedee;
+}
+.get-in-touch-area {
+    padding-bottom: 50px;
+    padding-top: 42px;
+}
+
+/* Contact */
+.contact {
+    text-align: left;
+}
+.get-in-info {
+    text-align: center;
+}
+.get-in-info a span {
+    font-size: 26px;
+    color: #613f85;
+    font-weight: 300;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.get-in-info a img {
+    width: 31px;
+    vertical-align: middle;
+} 
+.form-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.form-title p {
+    font-size: 20px;
+    color: #5d6364;
+    font-weight: 300;
+}
